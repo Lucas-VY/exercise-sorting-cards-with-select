@@ -8,17 +8,6 @@ let suits = ['♦', '♥', '♠', '♣'];
 /* almacenador */
 let orderCards = [];
 
-/* inversor de valores de cartas A, J, Q, K */
-function changeValue(valor) {
-    switch (valor) {
-        case '1': return "A";
-        case '11': return "J";
-        case '12': return "Q";
-        case '13': return "K";
-        default: return valor;
-    }
-}
-
 
 /* creador de cartas */
 function createCards(elem) {
@@ -81,6 +70,16 @@ function createCards(elem) {
     }
 }
 
+/* inversor de valores de cartas A, J, Q, K */
+function changeValue(valor) {
+    switch (valor) {
+        case '1': return "A";
+        case '11': return "J";
+        case '12': return "Q";
+        case '13': return "K";
+        default: return valor;
+    }
+}
 
 
 /* DRAW button estructura*/
